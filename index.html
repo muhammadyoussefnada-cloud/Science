@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجب درس تحولات الطاقة</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        .teacher-title {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .info-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            flex-wrap: wrap;
+        }
+        .info-box div {
+            flex: 1;
+            min-width: 250px;
+        }
+        .info-box label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+        }
+        .info-box input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .question-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .question-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #212529;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .options label:hover {
+            background: #e2e6ea;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result-box {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            display: none;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe5d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>واجب تقويمي: تحولات الطاقة</h1>
+    <div class="teacher-title">معلم العلوم: محمد يوسف ندا</div>
+    
+    <div class="info-box">
+        <div>
+            <label for="studentName">اسم الطالب:</label>
+            <input type="text" id="studentName" placeholder="أدخل اسمك الكامل">
+        </div>
+        <div>
+            <label for="studentClass">الفصل:</label>
+            <input type="text" id="studentClass" placeholder="أدخل الفصل (مثال: ثاني/1)">
+        </div>
+    </div>
+
+    <form id="quizForm">
+        <!-- 1 -->
+        <div class="question-card">
+            <div class="question-title">1. تُعرف التغيرات التي تحدث للأجسام في البيئة مثل اشتعال النار بسبب الصواعق بأنها:</div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> أ) تحولات الطاقة</label>
+                <label><input type="radio" name="q1" value="b"> ب) ثبات الطاقة</label>
+                <label><input type="radio" name="q1" value="c"> ج) انعدام الطاقة</label>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="question-card">
+            <div class="question-title">2. عندما يصعد شخص دراجة هوائية تلالاً، تتحول عضلات رجليه من طاقة كيميائية إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> أ) طاقة ضوئية</label>
+                <label><input type="radio" name="q2" value="b"> ب) طاقة حركية</label>
+                <label><input type="radio" name="q2" value="c"> ج) طاقة نووية</label>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="question-card">
+            <div class="question-title">3. يقصد بمصطلح (التحول) في مراجعة المفردات:</div>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> أ) تغيير البنية أو التركيب أو الشكل أو الطبيعة</label>
+                <label><input type="radio" name="q3" value="b"> ب) ثبات المادة دون تغيير</label>
+                <label><input type="radio" name="q3" value="c"> ج) اختفاء الطاقة تماماً</label>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="question-card">
+            <div class="question-title">4. ينص قانون حفظ الطاقة على أن الطاقة:</div>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> أ) تُستحدث ولا تفنى</label>
+                <label><input type="radio" name="q4" value="b"> ب) لا تُستحدث ولا تفنى إلا بقدرة الله، ولكن تتحول من شكل إلى آخر</label>
+                <label><input type="radio" name="q4" value="c"> ج) تفنى بمرور الزمن</label>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="question-card">
+            <div class="question-title">5. أثناء نزول قائد الدراجة من التل دون أن يستفيد منها، يتحول بعضها بسبب الاحتكاك إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> أ) طاقة حرارية في جسم قائد الدراجة</label>
+                <label><input type="radio" name="q5" value="b"> ب) طاقة كهربائية خالصة</label>
+                <label><input type="radio" name="q5" value="c"> ج) طاقة صوتية عالية</label>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="question-card">
+            <div class="question-title">6. عند قذف كرة في الهواء لأعلى ثم التقاطها، عندما تنطلق من يدك تكون معظم طاقتها:</div>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> أ) طاقة وضع</label>
+                <label><input type="radio" name="q6" value="b"> ب) طاقة حركية</label>
+                <label><input type="radio" name="q6" value="c"> ج) طاقة إشعاعية</label>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="question-card">
+            <div class="question-title">7. مع ارتفاع الكرة لأعلى أثناء قذفها:</div>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> أ) تقل سرعتها فتتناقص طاقتها الحركية</label>
+                <label><input type="radio" name="q7" value="b"> ب) تزيد سرعتها وتزداد طاقتها الحركية</label>
+                <label><input type="radio" name="q7" value="c"> ج) تظل طاقتها الحركية ثابتة تماماً</label>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="question-card">
+            <div class="question-title">8. مجموع طاقة الكرة (الحركية + الوضع) أثناء صعودها وهبوطها:</div>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> أ) يتغير باستمرار</label>
+                <label><input type="radio" name="q8" value="b"> ب) يبقى ثابتاً دائماً</label>
+                <label><input type="radio" name="q8" value="c"> ج) يقل حتى ينعدم</label>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="question-card">
+            <div class="question-title">9. تستعمل السيارات المهجنة (Hybrid) نوعين من المحركات هما:</div>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> أ) محرك جازولين ومحرك كهربائي</label>
+                <label><input type="radio" name="q9" value="b"> ب) محرك بخاري ومحرك ديزل</label>
+                <label><input type="radio" name="q9" value="c"> ج) محرك شمسي ومحرك مائي</label>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="question-card">
+            <div class="question-title">10. محرك السيارة يحول طاقة الوقود الكيميائية إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> أ) طاقة حركية، وفضلاً عن ذلك جزء يتحول إلى طاقة حرارية</label>
+                <label><input type="radio" name="q10" value="b"> ب) طاقة صوتية فقط</label>
+                <label><input type="radio" name="q10" value="c"> ج) طاقة ضوئية خالصة</label>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="question-card">
+            <div class="question-title">11. تحتوي المواد الموجودة في المخلوقات الحية (الكتلة الحيوية) على:</div>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> أ) طاقة كيميائية</label>
+                <label><input type="radio" name="q11" value="b"> ب) طاقة مغناطيسية</label>
+                <label><input type="radio" name="q11" value="c"> ج) طاقة كهربائية عالية</label>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="question-card">
+            <div class="question-title">12. تحلل كومة السماد (أجزاء نباتية وأوراق شجر) يتحول فيها الطاقة الكيميائية إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> أ) طاقة حرارية لترتفع درجة حرارة الكومة إلى 60°س</label>
+                <label><input type="radio" name="q12" value="b"> ب) طاقة حركية تسير الكومة</label>
+                <label><input type="radio" name="q12" value="c"> ج) طاقة كهربائية تنير المكان</label>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="question-card">
+            <div class="question-title">13. العضلات الهيكلية تجعل التجديف وقذف الكرة ممكناً من خلال تحويل:</div>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> أ) الطاقة الكيميائية إلى طاقة حركية على المستوى الخلوي</label>
+                <label><input type="radio" name="q13" value="b"> ب) الطاقة الكهربائية إلى طاقة صوتية</label>
+                <label><input type="radio" name="q13" value="c"> ج) الطاقة الحرارية إلى طاقة وضع</label>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="question-card">
+            <div class="question-title">14. تتكون العضلات الهيكلية من:</div>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> أ) ألياف أو رزم الخلايا العضلية</label>
+                <label><input type="radio" name="q14" value="b"> ب) عظام صلبة وغضاريف</label>
+                <label><input type="radio" name="q14" value="c"> ج) أوعية دموية فقط</label>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="question-card">
+            <div class="question-title">15. عند تشغيل المذياع، يتم تحويل الطاقة الكهربائية أولاً في مكبر الصوت إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> أ) طاقة حركية لمكبر الصوت</label>
+                <label><input type="radio" name="q15" value="b"> ب) طاقة حرارية عالية</label>
+                <label><input type="radio" name="q15" value="c"> ج) طاقة ضوئية ساطعة</label>
+            </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="question-card">
+            <div class="question-title">16. في تحولات الطاقة أثناء الاستماع للمذياع، تتحول الموجات الصوتية في أذنيك إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> أ) طاقة حركية لطبلة الأذن والسائل</label>
+                <label><input type="radio" name="q16" value="b"> ب) طاقة كيميائية مباشرة</label>
+                <label><input type="radio" name="q16" value="c"> ج) طاقة مغناطيسية</label>
+            </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="question-card">
+            <div class="question-title">17. تتكيف بعض المخلوقات الحية في المناطق الباردة بتخزين حرارة أجسامها عبر:</div>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> أ) طبقة سميكة من الفرو تمنع فقدان الطاقة الحرارية</label>
+                <label><input type="radio" name="q17" value="b"> ب) أكل الجليد باستمرار</label>
+                <label><input type="radio" name="q17" value="c"> ج) الحركة السريعة طوال اليوم</label>
+            </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="question-card">
+            <div class="question-title">18. تسخين الماء إلى درجة الغليان لتحويله إلى بخار يستعمل في:</div>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> أ) إنتاج الطاقة الحركية في المحركات البخارية لتسير القطارات</label>
+                <label><input type="radio" name="q18" value="b"> ب) تبريد الأجهزة الإلكترونية</label>
+                <label><input type="radio" name="q18" value="c"> ج) إضاءة الشوارع ليلاً</label>
+            </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="question-card">
+            <div class="question-title">19. تنتقل الطاقة الحرارية دائماً من:</div>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> أ) الشيء الأبرد إلى الشيء الأعلى حرارة</label>
+                <label><input type="radio" name="q19" value="b"> ب) الشيء ذي درجة الحرارة الأعلى إلى شيء ذي درجة حرارة أقل</label>
+                <label><input type="radio" name="q19" value="c"> ج) الأجسام المتساوية في الحرارة فقط</label>
+            </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="question-card">
+            <div class="question-title">20. المولد الكهربائي (Generator) يقوم بتحويل:</div>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> أ) الطاقة الحركية إلى طاقة كهربائية في وجود مجال مغناطيسي</label>
+                <label><input type="radio" name="q20" value="b"> ب) الطاقة الكهربائية إلى طاقة صوتية</label>
+                <label><input type="radio" name="q20" value="c"> ج) الطاقة الضوئية إلى طاقة حرارية</label>
+            </div>
+        </div>
+
+        <!-- 21 -->
+        <div class="question-card">
+            <div class="question-title">21. يتكون المولد الكهربائي البسيط من:</div>
+            <div class="options">
+                <label><input type="radio" name="q21" value="a"> أ) ملف من الأسلاك يدور داخل مجال مغناطيسي قوي</label>
+                <label><input type="radio" name="q21" value="b"> ب) بطارية فقط دون أسلاك</label>
+                <label><input type="radio" name="q21" value="c"> ج) مرآة عاكسة للضوء</label>
+            </div>
+        </div>
+
+        <!-- 22 -->
+        <div class="question-card">
+            <div class="question-title">22. التوربين (Turbine) يتكون من:</div>
+            <div class="options">
+                <label><input type="radio" name="q22" value="a"> أ) مجموعة من الشفرات تستخدم في تحريك الملف لإنتاج طاقة كهربائية</label>
+                <label><input type="radio" name="q22" value="b"> ب) مصابيح إضاءة متعددة</label>
+                <label><input type="radio" name="q22" value="c"> ج) خزانات مياه باردة فقط</label>
+            </div>
+        </div>
+
+        <!-- 23 -->
+        <div class="question-card">
+            <div class="question-title">23. في محطات توليد الطاقة التي تستعمل الوقود الأحفوري، يتم حرق الوقود لـ:</div>
+            <div class="options">
+                <label><input type="radio" name="q23" value="a"> أ) جعل الماء يغلي في المراجل ويتحول إلى بخار يحرك التوربين</label>
+                <label><input type="radio" name="q23" value="b"> ب) تجميد الماء فوراً</label>
+                <label><input type="radio" name="q23" value="c"> ج) إنتاج غاز الأكسجين النقي</label>
+            </div>
+        </div>
+
+        <!-- 24 -->
+        <div class="question-card">
+            <div class="question-title">24. من مصادر الطاقة الأخرى المستخدمة لتحريك التوربينات (غير الوقود الأحفوري):</div>
+            <div class="options">
+                <label><input type="radio" name="q24" value="a"> أ) الماء الجاري، الرياح، والطاقة النووية</label>
+                <label><input type="radio" name="q24" value="b"> ب) رمال الصحراء الجافة</label>
+                <label><input type="radio" name="q24" value="c"> ج) الملح الصخري</label>
+            </div>
+        </div>
+
+        <!-- 25 -->
+        <div class="question-card">
+            <div class="question-title">25. في أغلب الدول، يتم توليد معظم الطاقة الكهربائية بالمولدات التي تعمل بـ:</div>
+            <div class="options">
+                <label><input type="radio" name="q25" value="a"> أ) الوقود الأحفوري (أهمها الفحم والغاز الطبيعي)</label>
+                <label><input type="radio" name="q25" value="b"> ب) طاقة الرياح حصراً</label>
+                <label><input type="radio" name="q25" value="c"> ج) بطاريات الهواتف المحمولة</label>
+            </div>
+        </div>
+
+        <!-- 26 -->
+        <div class="question-card">
+            <div class="question-title">26. محطات توليد الطاقة التي تستعمل طاقة المياه وطاقة الرياح تقوم بـ:</div>
+            <div class="options">
+                <label><input type="radio" name="q26" value="a"> أ) تحويل الطاقة الحركية مباشرة إلى طاقة كهربائية دون الحاجة لبخار الماء لإدارة التوربينات</label>
+                <label><input type="radio" name="q26" value="b"> ب) حرق الفحم بكميات ضخمة</label>
+                <label><input type="radio" name="q26" value="c"> ج) تسخين المياه لدرجات حرارة فائقة</label>
+            </div>
+        </div>
+
+        <!-- 27 -->
+        <div class="question-card">
+            <div class="question-title">27. سلسلة تحولات الطاقة في محطات حرق النفط أو الطاقة النووية تبدأ من:</div>
+            <div class="options">
+                <label><input type="radio" name="q27" value="a"> أ) الطاقة الكيميائية للنفط</label>
+                <label><input type="radio" name="q27" value="b"> ب) الطاقة الكهربائية للشبكة</label>
+                <label><input type="radio" name="q27" value="c"> ج) طاقة الصوت المرتفع</label>
+            </div>
+        </div>
+
+        <!-- 28 -->
+        <div class="question-card">
+            <div class="question-title">28. الحرارة الناتجة عن أي شكل من أشكال الطاقة تنتج خلال:</div>
+            <div class="options">
+                <label><input type="radio" name="q28" value="a"> أ) تحولات الطاقة</label>
+                <label><input type="radio" name="q28" value="b"> ب) ثبات الأجسام الساكنة</label>
+                <label><input type="radio" name="q28" value="c"> ج) انعدام الحركة تماماً</label>
+            </div>
+        </div>
+
+        <!-- 29 -->
+        <div class="question-card">
+            <div class="question-title">29. يحول المولد الكهربائي الطاقة الحركية إلى:</div>
+            <div class="options">
+                <label><input type="radio" name="q29" value="a"> أ) طاقة كهربائية</label>
+                <label><input type="radio" name="q29" value="b"> ب) طاقة نووية مشعة</label>
+                <label><input type="radio" name="q29" value="c"> ج) طاقة كيميائية مخزنة</label>
+            </div>
+        </div>
+
+        <!-- 30 -->
+        <div class="question-card">
+            <div class="question-title">30. ينتج احتراق الوقود الأحفوري طاقة حرارية تستخدم في:</div>
+            <div class="options">
+                <label><input type="radio" name="q30" value="a"> أ) غلي الماء وإنتاج البخار</label>
+                <label><input type="radio" name="q30" value="b"> ب) تبريد التوربينات بشكل تام</label>
+                <label><input type="radio" name="q30" value="c"> ج) إنتاج الثلج الصناعي</label>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button type="button" onclick="calculateScore()">تصحيح الواجب وإظهار النتيجة</button>
+        </div>
+    </form>
+
+    <div id="result-box"></div>
+</div>
+
+<script>
+    const correctAnswers = {
+        q1: 'a', q2: 'b', q3: 'a', q4: 'b', q5: 'a',
+        q6: 'b', q7: 'a', q8: 'b', q9: 'a', q10: 'a',
+        q11: 'a', q12: 'a', q13: 'a', q14: 'a', q15: 'a',
+        q16: 'a', q17: 'a', q18: 'a', q19: 'b', q20: 'a',
+        q21: 'a', q22: 'a', q23: 'a', q24: 'a', q25: 'a',
+        q26: 'a', q27: 'a', q28: 'a', q29: 'a', q30: 'a'
+    };
+
+    function calculateScore() {
+        let score = 0;
+        let total = 30;
+
+        for (let i = 1; i <= total; i++) {
+            let radios = document.getElementsByName('q' + i);
+            for (let r of radios) {
+                if (r.checked && r.value === correctAnswers['q' + i]) {
+                    score++;
+                }
+            }
+        }
+
+        let studentName = document.getElementById('studentName').value || 'غير محدد';
+        let studentClass = document.getElementById('studentClass').value || 'غير محدد';
+        let teacherName = "محمد يوسف ندا";
+
+        let resultBox = document.getElementById('result-box');
+        resultBox.style.display = 'block';
+        
+        let percentage = (score / total) * 100;
+        resultBox.innerHTML = `مرحباً بك يا ${studentName} (${studentClass})<br>لقد أجبت بشكل صحيح على ${score} من ${total} (النسبة: ${percentage.toFixed(1)}%)`;
+        
+        if (score >= 25) {
+            resultBox.style.backgroundColor = '#d4edda';
+            resultBox.style.color = '#155724';
+        } else if (score >= 15) {
+            resultBox.style.backgroundColor = '#fff3cd';
+            resultBox.style.color = '#856404';
+        } else {
+            resultBox.style.backgroundColor = '#f8d7da';
+            resultBox.style.color = '#721c24';
+        }
+
+        let whatsappText = `نتيجة واجب تحولات الطاقة:%0A` +
+                           `معلم المادة: ${teacherName}%0A` +
+                           `اسم الطالب: ${studentName}%0A` +
+                           `الفصل: ${studentClass}%0A` +
+                           `الدرجة: ${score} / ${total} (${percentage.toFixed(1)}%)`;
+
+        let whatsappUrl = `https://wa.me/?text=${whatsappText}`;
+
+        resultBox.innerHTML += `<br><a href="${whatsappUrl}" target="_blank" class="whatsapp-btn">إرسال النتيجة عبر الواتساب 📱</a>`;
+    }
+</script>
+
+</body>
+</html>
