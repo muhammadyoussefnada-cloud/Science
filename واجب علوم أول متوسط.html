@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>واجب العلوم - نموذج (1)</title>
+    <style>
+        body { 
+            font-family: Tahoma, sans-serif; 
+            /* خلفية بتصميم بصري يعبر عن الذرة */
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            background-size: cover;
+            margin: 0; 
+            padding: 20px; 
+            direction: rtl; 
+            color: #fff;
+        }
+        .container { 
+            max-width: 800px; 
+            background: rgba(255, 255, 255, 0.95); 
+            color: #333;
+            margin: auto; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+        }
+        h1, h2 { text-align: center; color: #0f3460; }
+        .info-box { background: #e0f7fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #b2ebf2; }
+        .info-box label { display: block; margin-bottom: 5px; font-weight: bold; color: #006064; }
+        .info-box input { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .question { margin-bottom: 20px; padding: 15px; background: #f1f8e9; border-right: 5px solid #2e7d32; border-radius: 6px; }
+        .question p { font-weight: bold; margin-top: 0; color: #1b5e20; }
+        .options label { display: block; margin: 8px 0; cursor: pointer; color: #333; }
+        .btn { background: #2e7d32; color: white; border: none; padding: 12px 20px; font-size: 16px; cursor: pointer; border-radius: 8px; display: block; width: 100%; text-align: center; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #1b5e20; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>واجب مادة العلوم</h1>
+    <h2>المعلم: محمد يوسف ندا - نموذج (1)</h2>
+    
+    <div class="info-box">
+        <label for="studentName1">اسم الطالب:</label>
+        <input type="text" id="studentName1" placeholder="أدخل اسمك الكامل">
+        <label for="studentClass1">الفصل:</label>
+        <input type="text" id="studentClass1" placeholder="أدخل الفصل">
+    </div>
+
+    <form id="quizForm1">
+        <!-- السؤال 1 -->
+        <div class="question">
+            <p>1. ما التعريف العلمي الدقيق للمادة؟</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> أ) كل ما له كتلة ولا يشغل حيزاً</label>
+                <label><input type="radio" name="q1" value="b"> ب) كل شيء له كتلة ويشغل حيزاً</label>
+                <label><input type="radio" name="q1" value="c"> ج) الحرارة والضوء فقط</label>
+                <label><input type="radio" name="q1" value="d"> د) الأفكار والاحساس</label>
+            </div>
+        </div>
+
+        <!-- السؤال 2 -->
+        <div class="question">
+            <p>2. لماذا لا يُعد الضوء مادة؟</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> أ) لأنه يمتلك كتلة كبيرة</label>
+                <label><input type="radio" name="q2" value="b"> ب) لأنه يشغل حيزاً كبيراً</label>
+                <label><input type="radio" name="q2" value="c"> ج) ليس له كتلة وليس له حيز يشغله</label>
+                <label><input type="radio" name="q2" value="d"> د) لأنه مرئي بالعين المجردة</label>
+            </div>
+        </div>
+
+        <!-- السؤال 3 -->
+        <div class="question">
+            <p>3. مم يتكون الهواء الجوي في الحقيقة؟</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> أ) غاز النيتروجين والأكسجين فقط</label>
+                <label><input type="radio" name="q3" value="b"> ب) فراغ مطلق</label>
+                <label><input type="radio" name="q3" value="c"> ج) مخلوط من غازات متعددة ومواد</label>
+                <label><input type="radio" name="q3" value="d"> د) بخار ماء خالص</label>
+            </div>
+        </div>
+
+        <!-- السؤال 4 -->
+        <div class="question">
+            <p>4. الفيلسوف اليوناني الذي اعتقد أن الكون يتألف من ذرات وفراغ هو:</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> أ) ديموقريطس</label>
+                <label><input type="radio" name="q4" value="b"> ب) دالتون</label>
+                <label><input type="radio" name="q4" value="c"> ج) طومسون</label>
+                <label><input type="radio" name="q4" value="d"> د) رذرفورد</label>
+            </div>
+        </div>
+
+        <!-- السؤال 5 -->
+        <div class="question">
+            <p>5. ماذا تعني كلمة "ذرة" (Atomos) حسب الفكرة القديمة؟</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> أ) الشيء القابل للتجزئة باستمرار</label>
+                <label><input type="radio" name="q5" value="b"> ب) الشيء الذي لا يجزأ</label>
+                <label><input type="radio" name="q5" value="c"> ج) الجسيم المشحون بشحنة سالبة</label>
+                <label><input type="radio" name="q5" value="d"> د) الكتلة المتساوية</label>
+            </div>
+        </div>
+
+        <!-- السؤال 6 -->
+        <div class="question">
+            <p>6. الكيميائي الفرنسي الذي وضع قانون حفظ المادة هو:</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> أ) لافوازيه</label>
+                <label><input type="radio" name="q6" value="b"> ب) بور</label>
+                <label><input type="radio" name="q6" value="c"> ج) شادويك</label>
+                <label><input type="radio" name="q6" value="d"> د) دالتون</label>
+            </div>
+        </div>
+
+        <!-- السؤال 7 -->
+        <div class="question">
+            <p>7. ينص قانون حفظ المادة على أن:</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> أ) المادة تفنى أثناء التفاعلات الكيميائية</label>
+                <label><input type="radio" name="q7" value="b"> ب) المادة لا تفنى ولا تستحدث ولا تتحدث إلا بقدرة الله، وإنما تتحول من شكل لأخر</label>
+                <label><input type="radio" name="q7" value="c"> ج) كتلة النواتج أقل دائماً من المتفاعلات</label>
+                <label><input type="radio" name="q7" value="d"> د) الاحتراق يخلق مواد جديدة من العدم</label>
+            </div>
+        </div>
+
+        <!-- السؤال 8 -->
+        <div class="question">
+            <p>8. العالم الكيميائي الذي صمم أول نموذج ذري علمي عام 1800م هو:</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> أ) جون دالتون</label>
+                <label><input type="radio" name="q8" value="b"> ب) طومسون</label>
+                <label><input type="radio" name="q8" value="c"> ج) رذرفورد</label>
+                <label><input type="radio" name="q8" value="d"> د) نيلز بور</label>
+            </div>
+        </div>
+
+        <!-- السؤال 9 -->
+        <div class="question">
+            <p>9. الجسيمات ذات الشحنة السالبة في الذرة التي اكتشفها طومسون هي:</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> أ) البروتونات</label>
+                <label><input type="radio" name="q9" value="b"> ب) النيوترونات</label>
+                <label><input type="radio" name="q9" value="c"> ج) الإلكترونات</label>
+                <label><input type="radio" name="q9" value="d"> د) النواة</label>
+            </div>
+        </div>
+
+        <!-- السؤال 10 -->
+        <div class="question">
+            <p>10. كيف تخيل طومسون شكل الذرة في نموذجه؟</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> أ) كرة مجوفة تماماً</label>
+                <label><input type="radio" name="q10" value="b"> ب) كرة متجانسة موجبة الشحنة تتوزع فيها الإلكترونات سالبة الشحنة</label>
+                <label><input type="radio" name="q10" value="c"> ج) نواة مركزية يحيط بها فراغ هائل</label>
+                <label><input type="radio" name="q10" value="d"> د) مدارات محددة للطاقة كالكواكب</label>
+            </div>
+        </div>
+
+        <!-- السؤال 11 -->
+        <div class="question">
+            <p>11. العالم الذي أثبت وجود نواة صغيرة جداً ومركزية وموجبة الشحنة في الذرة هو:</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> أ) رذرفورد</label>
+                <label><input type="radio" name="q11" value="b"> ب) دالتون</label>
+                <label><input type="radio" name="q11" value="c"> ج) طومسون</label>
+                <label><input type="radio" name="q11" value="d"> د) ديموقريطس</label>
+            </div>
+        </div>
+
+        <!-- السؤال 12 -->
+        <div class="question">
+            <p>12. أطلق رذرفورد اسم ......... على الجسيمات موجبة الشحنة داخل النواة.</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> أ) إلكترونات</label>
+                <label><input type="radio" name="q12" value="b"> ب) بروتونات</label>
+                <label><input type="radio" name="q12" value="c"> ج) نيوترونات</label>
+                <label><input type="radio" name="q12" value="d"> د) فوتونات</label>
+            </div>
+        </div>
+
+        <!-- السؤال 13 -->
+        <div class="question">
+            <p>13. العالم الذي اكتشف وجود جسيم داخل النواة متعادل الشحنة (النيوترون) هو:</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> أ) شادويك</label>
+                <label><input type="radio" name="q13" value="b"> ب) بور</label>
+                <label><input type="radio" name="q13" value="c"> ج) طومسون</label>
+                <label><input type="radio" name="q13" value="d"> د) دالتون</label>
+            </div>
+        </div>
+
+        <!-- السؤال 14 -->
+        <div class="question">
+            <p>14. ماذا استنتج رذرفورد عن معظم حجم الذرة؟</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> أ) الذرة مصمتة تماماً</label>
+                <label><input type="radio" name="q14" value="b"> ب) معظم حجم الذرة فراغ</label>
+                <label><input type="radio" name="q14" value="c"> ج) الحجم يشغله بالكامل النيوترونات</label>
+                <label><input type="radio" name="q14" value="d"> د) النواة تحتل 99% من حجم الذرة</label>
+            </div>
+        </div>
+
+        <!-- السؤال 15 -->
+        <div class="question">
+            <p>15. العالم الذي اقترح أن الإلكترونات تدور حول النواة في مستويات طاقة محددة (تشبه الكواكب) هو:</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> أ) نيلز بور</label>
+                <label><input type="radio" name="q15" value="b"> ب) دالتون</label>
+                <label><input type="radio" name="q15" value="c"> ج) طومسون</label>
+                <label><input type="radio" name="q15" value="d"> د) لافوازيه</label>
+            </div>
+        </div>
+
+        <!-- السؤال 16 -->
+        <div class="question">
+            <p>16. النموذج الذري الحديث يوضح أن الإلكترونات تتحرك حول النواة على شكل:</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> أ) خطوط مستقيمة وثابتة</label>
+                <label><input type="radio" name="q16" value="b"> ب) سحابة إلكترونية</label>
+                <label><input type="radio" name="q16" value="c"> ج) حلقات صلبة</label>
+                <label><input type="radio" name="q16" value="d"> د) مسارات دائرية محددة تماماً كالساعة</label>
+            </div>
+        </div>
+
+        <!-- السؤال 17 -->
+        <div class="question">
+            <p>17. تتكون النواة في الذرة من:</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> أ) إلكترونات فقط</label>
+                <label><input type="radio" name="q17" value="b"> ب) بروتونات وإلكترونات</label>
+                <label><input type="radio" name="q17" value="c"> ج) بروتونات ونيوترونات</label>
+                <label><input type="radio" name="q17" value="d"> د) فراغ تام</label>
+            </div>
+        </div>
+
+        <!-- السؤال 18 -->
+        <div class="question">
+            <p>18. تدل كثافة اللون الغامق في السحابة الإلكترونية في النموذج الحديث على:</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> أ) انعدام وجود الإلكترون</label>
+                <label><input type="radio" name="q18" value="b"> ب) المنطقة التي يزيد احتمال وجود الإلكترون فيها</label>
+                <label><input type="radio" name="q18" value="c"> ج) شحنة النواة الموجبة فقط</label>
+                <label><input type="radio" name="q18" value="d"> د) وزن النيوترونات</label>
+            </div>
+        </div>
+
+        <!-- السؤال 19 -->
+        <div class="question">
+            <p>19. أي مما يلي يُعد مثالاً على مادة؟</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> أ) حرارة السخان</label>
+                <label><input type="radio" name="q19" value="b"> ب) ضوء الشمس</label>
+                <label><input type="radio" name="q19" value="c"> ج) قطعة النحاس</label>
+                <label><input type="radio" name="q19" value="d"> د) الأفكار</label>
+            </div>
+        </div>
+
+        <!-- السؤال 20 -->
+        <div class="question">
+            <p>20. وفقاً لنموذج دالتون الذري، فإن:</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> أ) كل نوع من المادة يتكون من نوع واحد من الذرات</label>
+                <label><input type="radio" name="q20" value="b"> ب) الذرات تتكون من إلكترونات سالبة</label>
+                <label><input type="radio" name="q20" value="c"> ج) الإلكترونات تتحرك في سحابة إلكترونية</label>
+                <label><input type="radio" name="q20" value="d"> د) النواة تحتوي على نيوترونات</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn" onclick="sendWhatsApp1()">إرسال نتيجة الواجب عبر الواتساب</button>
+    </form>
+</div>
+
+<script>
+function sendWhatsApp1() {
+    const name = document.getElementById('studentName1').value;
+    const className = document.getElementById('studentClass1').value;
+    
+    if(!name || !className) {
+        alert('الرجاء إدخال اسم الطالب والفصل قبل الإرسال.');
+        return;
+    }
+
+    const answers = {
+        q1: 'b', q2: 'c', q3: 'c', q4: 'a', q5: 'b',
+        q6: 'a', q7: 'b', q8: 'a', q9: 'c', q10: 'b',
+        q11: 'a', q12: 'b', q13: 'a', q14: 'b', q15: 'a',
+        q16: 'b', q17: 'c', q18: 'b', q19: 'c', q20: 'a'
+    };
+
+    let score = 0;
+    let total = 20;
+
+    for(let key in answers) {
+        let ele = document.querySelector('input[name="' + key + '"]:checked');
+        if(ele && ele.value === answers[key]) {
+            score++;
+        }
+    }
+
+    let message = `نتيجة واجب العلوم - نموذج (1)%0A` +
+                  `المعلم: محمد يوسف ندا%0A` +
+                  `اسم الطالب: ${name}%0A` +
+                  `الفصل: ${className}%0A` +
+                  `الدرجة: ${score} / ${total}`;
+
+    let url = `https://wa.me/966544112814?text=${message}`;
+    window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
